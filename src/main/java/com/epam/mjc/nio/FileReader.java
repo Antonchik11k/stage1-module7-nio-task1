@@ -2,7 +2,6 @@ package com.epam.mjc.nio;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,7 +31,6 @@ public class FileReader {
             return new Profile(name, age, email, phone);
         }
         catch (IOException e) {
-            e.printStackTrace();
             return null; // Handle the exception as needed
         }
     }
